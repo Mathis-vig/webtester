@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="public/Capture d'écran 2025-12-19 111127.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="header.css">
+  <title>webtester</title>
+</head>
+
+<body>
+
+<header id="header">
+  <nav class="header__nav">
+    <div class="header__logo">MAISON VIGNASTRA</div>
+    <div class="header__menu">
+      <button class="header__button"><a href="#catalogue" class="btn-link">catalogue</a></button>
+      <button class="header__button"><a href="page-mentions-legales.html" class="btn-link">mentions légales</a></button>
+      <button class="header__button">blog</button>
+      <button class="header__button">support</button>
+    </div>
+    <div class="header__auth">
+      <button class="header__button">log in</button>
+      <button class="header__button"><a href="page-sign-up.html" class="btn-link">sign up</a></button>
+    </div>
+    <div class="header__menu-mobile">
+      <img src="asset/menu.svg" alt="menu">
+    </div>
+  </nav>
+</header>
+
+<main>
+  
+  <div class="background-image">
+  
+
+  </div>
+  
+  <section class="middle-banner">
+      <h1 class="banner-title">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Qualité supérieur &emsp;&emsp;&emsp;&emsp;&emsp; Sans pesticide &emsp;&emsp;&emsp;&emsp;&emsp; Engagé dans l'écologie&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      </section>
+      
+     <section id="catalogue" class="catalogue-sapins">
+
+  <h2 class="catalogue-title">Nos Sapins</h2>
+
+  <div class="catalogue-grid">
+
+    <article class="catalogue-item">
+      <img src="public/ecosapin-nordman-removebg-preview.png" alt="Sapin 1">
+      <h3>Sapin Nordmann</h3>
+      <p>À partir de 39€</p>
+    </article>
+
+    <article class="catalogue-item">
+      <img src="public/PHOTO-2024-11-20-16-21-19-removebg-preview.png" alt="Sapin 2">
+      <h3>Sapin Épicéa</h3>
+      <p>À partir de 29€</p>
+    </article>
+
+    <article class="catalogue-item">
+      <img src="public/sapin_nobilis-removebg-preview.png" alt="Sapin 3">
+      <h3>Sapin Nobilis</h3>
+      <p>À partir de 49€</p>
+    </article>
+
+    <article class="catalogue-item">
+      <img src="public/image-removebg-preview 2.png" alt="Sapin 4">
+      <h3>Sapin Bleu</h3>
+      <p>À partir de 45€</p>
+    </article>
+
+    <article class="catalogue-item">
+      <img src="public//Sapin-de-Noel-scaled-1-removebg-preview.png" alt="Sapin 5">
+      <h3>Sapin Fraser</h3>
+      <p>À partir de 42€</p>
+    </article>
+
+    <article class="catalogue-item">
+      <img src="public/PHOTO-2024-11-20-16-21-19-removebg-preview.png" alt="Sapin 6">
+      <h3>Sapin Douglas</h3>
+      <p>À partir de 35€</p>
+    </article>
+
+    <article class="catalogue-item">
+      <img src="public/43887-sapin-de-noel-nordmann-label-rouge-sur-buchette-125150cm-livraison-incluse-2-removebg-preview.png" alt="Sapin 7">
+      <h3>Sapin Mini</h3>
+      <p>À partir de 19€</p>
+    </article>
+
+    <article class="catalogue-item">
+      <img src="public/noel-vert.com-NORDMANN-grand-pied-buche-removebg-preview.png" alt="Sapin 8">
+      <h3>Sapin Géant</h3>
+      <p>À partir de 89€</p>
+    </article>
+
+    <article class="catalogue-item">
+      <img src="public/image-removebg-preview.png" alt="Sapin 9">
+      <h3>Sapin Premium</h3>
+      <p>À partir de 99€</p>
+    </article>
+
+  </div>
+</section>
+
+  
+
+  <div class="bandeau-bas">
+    Pour plus d'information contactez nous !
+  </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+let lastScroll = 0;
+const header = document.getElementById("header");
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll > lastScroll && currentScroll > 50) {
+    header.classList.add("header--hidden");
+  } else {
+    header.classList.remove("header--hidden");
+  }
+  lastScroll = currentScroll;
+});
+</script>
+
+</body>
+</html>
