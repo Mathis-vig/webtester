@@ -1,0 +1,277 @@
+/* Partie codage des bouton */
+
+.header__nav {                 /* alignement des bouton */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.header__menu-mobile {
+    display: none;
+
+}
+
+
+
+.header__button {             /*réglage graphique des boutons */
+    padding: 9px 20px;
+    margin:0 2px;
+
+    border-radius: 50px;
+    border: none;
+    outline: none;
+
+    background: var(--gray-15);
+    color: var(--secondary-color);
+    font-weight: 0;
+    font-size: 23px;
+      z-index: 9999;  
+    font-family:var(--open-sans);
+    line-height: px;
+
+    cursor: pointer;
+    
+}
+
+
+
+/* zoom commun à tous les boutons */
+.header__button:hover {
+    transform: scale(1.08);
+    transition: transform 0.2s ease;
+}
+
+
+
+.header__button:hover,         /*réglage bouton log-in*/
+
+.header__auth .header__button:nth-child(1) {
+
+     background-color: #17560fde;  
+    color: rgb(255, 255, 255);  
+    
+
+}
+
+
+.header__button:hover,          /*réglage bouton sign-up*/
+
+.header__auth .header__button:nth-child(2) {
+
+     background-color: #b9aa05de;  
+    color: rgb(255, 252, 252);  
+    
+
+}
+
+
+
+.header__button:not(.header__auth .header__button:nth-child(2)):hover {     /*pareil que au dessus*/
+    background-color: #17560f; 
+    color: var(--secondary-color);
+    
+}
+
+
+
+/*Partie réglage du logo */
+
+.header__logo {               
+    padding: 10px 20px;
+
+    background: linear-gradient(to
+left, #877b13, #b7cc18, #c7b11f, #b2eb06);
+background-clip: text;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+
+color: transparent;
+font: weight 700px;
+font-size:  25px;
+font-family: var(--open-sans);
+
+cursor: default;
+
+}
+
+
+.header__logo {    
+    
+  font-family: "Georgia", "Times New Roman", serif;  
+}
+
+
+
+    /*Partie réglage des bandeau/banniere */
+
+
+
+
+#header {             /* Affiche le bandeau haut,le rend fixe */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--primary-color);
+    transition: transform 0.2s ease;
+    background-color: rgba(21, 87, 4, 0.913);  
+    
+
+}
+
+
+/* Cache le header(bandeau) quand on scroll vers le bas */
+.header--hidden {
+    transform: translateY(-100%);
+}
+
+
+
+.middle-banner {           
+
+    width: 100%;              
+    height: 170px;           
+   
+    margin: -9px 0;           
+   background: linear-gradient(to
+left, #094609, #095c15, #1d710c, #0c5409);
+
+    
+}
+
+
+
+.banner-title {       /*réglage de la banniere du milieu*/ 
+
+    color: rgb(255, 255, 255);   
+    font-size: 23px;      
+    text-align: center;     
+    line-height: 170px;      
+    font-family: var(--open-sans); 
+     margin-right: 20px;
+    
+     
+}
+
+
+.bandeau-bas {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    margin-top: 0px;
+   
+   
+
+}
+
+
+
+#header {                        
+    
+    
+    min-height: 100px; /* ajuste la hauteur du header( bandeau ) */
+    padding: 30px 0;   /* espace intérieur */
+    
+}
+
+
+ /* Autres codage */
+
+
+.btn-link {        /*button-sign up-link*/
+    text-decoration: none;
+    color: inherit;      /* même couleur que le bouton */
+    font: inherit;       
+
+}
+
+
+
+.background-image {
+  background-image: url("/public/background-base.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 875px;
+  position: relative;
+}
+
+
+main {
+  margin-top: 109px; /* hauteur réelle du header */
+}
+
+
+
+/* CATALOGUE DES SAPINS */
+.catalogue-sapins {
+  width: 100%;
+  padding: 80px 5%;
+  background-color: rgb(94, 78, 43);
+  text-align: center;
+}
+
+.catalogue-title {
+  font-size: 36px;
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+
+.catalogue-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.catalogue-item {
+  background-color: rgba(255, 255, 255, 0.87);
+  padding: 25px;
+  border-radius: 15px;
+  color: #555454;
+  transition: transform 0.3s ease;
+}
+
+.catalogue-item:hover {
+  transform: scale(1.02);
+}
+
+.catalogue-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .catalogue-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .catalogue-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .bandeau-bas{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .bandeau-bas {
+    grid-template-columns: 1fr;
+  }
+}
+

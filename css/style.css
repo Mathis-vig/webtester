@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@import url("responsive.css"); 
+@import url("sections/header.css");
+@import url("sections/hero.css");
+@import url("global.css");
+
+
+:root {
+    --roboto: "Roboto", sans-serif;
+    --open-sans: "Open Sans", sans-serif;
+
+    --primary-color: #dcdadaa6;
+    --secondary-color: #d2d2d2;
+
+
+    --gray-15: #19580700;
+    --gray-36: #5c5c5c;
+    --gray-100: #888888;
+    
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
